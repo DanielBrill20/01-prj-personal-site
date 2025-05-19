@@ -2,10 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Daniel Brill Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <!-- Navigation links to sections of the page -->
+    <ul>
+      <!-- Change href to "#" for Home to scroll to very top -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Picture Section -->
+  <div class="profile-picture" id="home">
+    <!-- This is your profile image -->
+    <img src="img/senior-pic.jpg" alt="Profile Picture">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- This is the main introduction area -->
+    <h1 class="main-title">Daniel Brill</h1>
+    <div class="tagline">
+      Developer <span class="divider">|</span> Teacher <span class="divider">|</span> Creative
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="bio" id="about">
+    <!-- This section is about you -->
+    <h2>About Me</h2>
+    <p>
+      <!-- Split bio into multiple lines for better readability -->
+      Welcome! My name is Daniel, and I am a Computer Science major at the University of Cincinnati.<br>
+      I am an aspiring creative technologist passionate about the intersection of art, fashion, and technology.<br>
+      I hope to bring the beauty of tech to others via various fun and practical UX experiences, physical and not.<br>
+      Stick around to see my work!
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <!-- 1: HTML (smallest) -->
+      <li title="HTML5" class="skill-size-1">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">
+          <i class="fab fa-html5 icon-fix-html"></i>
+        </a>
+      </li>
+      <!-- 2: CSS (small) -->
+      <li title="CSS3" class="skill-size-2">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">
+          <i class="fab fa-css3-alt icon-fix-css"></i>
+        </a>
+      </li>
+      <!-- 3: JavaScript (medium) -->
+      <li title="JavaScript" class="skill-size-3">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">
+          <i class="fab fa-js-square"></i>
+        </a>
+      </li>
+      <!-- 4: C/C++ (largest, center) -->
+      <li title="C/C++" class="skill-size-4">
+        <a href="https://en.cppreference.com/w/" target="_blank" rel="noopener">
+          <i class="fas fa-code"></i>
+        </a>
+      </li>
+      <!-- 5: Python (medium) -->
+      <li title="Python" class="skill-size-3">
+        <a href="https://www.python.org/" target="_blank" rel="noopener">
+          <i class="fab fa-python"></i>
+        </a>
+      </li>
+      <!-- 6: p5.js (small) -->
+      <li title="p5.js" class="skill-size-2">
+        <a href="https://p5js.org/" target="_blank" rel="noopener">
+          <i class="fas fa-paint-brush icon-fix-paint"></i>
+        </a>
+      </li>
+      <!-- 7: Adobe Creative Cloud (smallest) -->
+      <li title="Adobe Creative Cloud" class="skill-size-1">
+        <a href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noopener">
+          <i class="fas fa-palette icon-fix-palette"></i>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <!-- This section will show your projects -->
+    <h2>Projects</h2>
+    <p>
+      <!-- You can add your projects here -->
+      Coming soon! Check back later to see my work.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <!-- Contact icons only -->
+    <h2>Contact</h2>
+    <div class="contact-icons">
+      <!-- Email: remove target and rel for mailto links -->
+      <a href="mailto:brilldr@mail.uc.edu" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <!-- LinkedIn: add https:// to the URL -->
+      <a href="https://linkedin.com/in/-daniel-brill-" target="_blank" rel="noopener" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/DanielBrill20" target="_blank" rel="noopener" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <!-- Footer bar at the bottom -->
+  <div class="footer-bar">
+    &copy; 2025 Daniel Brill
+  </div>
 </body>
 </html>
